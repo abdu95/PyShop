@@ -5,6 +5,5 @@ from .models import Service
 
 def index(request):
     services = Service.objects.all()
-    return render(request, 'index.html')
-    # return render(request, 'index.html', {'services': services})
+    return render(request, 'indexto.html', {'services': services})
 
